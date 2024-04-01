@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/SharanReddyy/Terraform-Assignment'
+                git 'https://github.com/SharanReddyy/Terraform-AWS-Jenkins'
             }
         }
         
