@@ -37,6 +37,13 @@ pipeline {
                 }
             }
         }
+        stage('Delay Before Destroy') {
+            steps {
+                script {
+                    sleep time: 300, unit: 'SECONDS'
+                }
+            }
+        }
 
         stage('Terraform Destroy') {
             steps {
